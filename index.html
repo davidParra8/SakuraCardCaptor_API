@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Card Captor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar is-fixed-top has-shadow is-flex-touch is-justify-content-space-between">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <div class="navbar-end is-flex-touch is-justify-content-space-between">
+                <div class="navbar-item">
+                    <form class="field has-addons" id="busqueda">
+                        <div class="control">
+                            <input id="inputBusqueda" autocomplete="off" class="input is-borderless is-rounded has-background-light" type="text" placeholder="Buscar...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section pt-5 pb-0">
+            <div class="container">
+                <div class="categories is-flex is-justify-content-space-between">
+                    <div id="catAmbas" class="box mr-2 mb-2 is-flex is-align-items-center is-flex-direction-column">
+                        <a href="#" class="has-text-centered">
+                            <figure class="image">
+                                <img src="images/ambas.png">
+                            </figure>
+                            <strong>Ambas</strong>
+                        </a>
+                    </div>
+                    <div id="catClow" class="box mr-2 mb-2 is-flex is-align-items-center is-flex-direction-column">
+                        <a href="#" class="has-text-centered">
+                            <figure class="image">
+                                <img src="images/clow.jpg">
+                            </figure>
+                            <strong>Clow</strong>
+                        </a>
+                    </div>
+                    <div id="catSakura" class="box mr-2 mb-2 is-flex is-align-items-center is-flex-direction-column">
+                        <a href="#" class="has-text-centered">
+                            <figure class="image">
+                                <img src="images/sakura.jpg">
+                            </figure>
+                            <strong>Sakura</strong>
+                        </a>
+                    </div>
+                    <div id="catInvertir" class="box mr-2 mb-2 is-flex is-align-items-center is-flex-direction-column">
+                        <a href="#" class="has-text-centered">
+                            <figure class="image">
+                                <img src="images/order.svg">
+                            </figure>
+                            <strong>Invertir</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br/>
+
+        <div id="resultadosApi" class="columns is-multiline is-flex is-justify-content-center is-align-items-center">
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-background" onClick="showModal()"></div>
+            <div class="modal-content">
+                <div class="modal-box">
+                    <article class="media">
+                        <div class="media-content">
+                            <div class="content">
+                                <div class="is-flex is-justify-content-center">
+                                    <h3 id="nombreCarta"> </h3>
+                                </div>
+                                <div>
+                                    <p id="nombreEspanolCarta"> </p>
+                                    <p id="numeroCarta"> </p>
+                                    <p id="aparicionManga"> </p>
+                                    <p id="significado"> </p>
+                                </div>
+                                <div class="is-flex is-justify-content-center">
+                                    <img id="cartaSakura" src="">
+                                    <img id="cartaClow" src="">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <button class="modal-close is-large" aria-label="close" onClick="showModal()"></button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Sakura Card Captor</strong> &copy; 2022
+                <span class="mx-2">&middot;</span> Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/filter.js"></script>
+</body>
+
+</html>

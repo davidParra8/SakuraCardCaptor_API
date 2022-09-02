@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Rubik', sans-serif;
+    background-color: rgba(221, 162, 162, 0.726);
+}
+
+img{
+    width: 140px;
+    height: 260px;
+    margin: 3px;
+}
+
+.tarjeta{    
+    margin: 0 25px 20px; /*top, right y left, bottom*/
+    padding: 10px;
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,.3);
+    box-shadow: 3px 3px 3px 3px rgb(0 0 0 / 5%);
+    scroll-snap-align: start;
+    min-width: 122px;
+}
+
+.image>img{
+    height: 90px;
+    width: 78px;
+}
+
+.container>div>div:hover{
+    background-color: rgba(141, 40, 40, 0.767);
+    box-shadow: 3px 3px 3px 3px rgb(255,255,255 / 5%);
+    color: black !important;
+}
+
+.modal-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
